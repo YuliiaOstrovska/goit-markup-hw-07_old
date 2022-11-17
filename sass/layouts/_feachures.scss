@@ -1,0 +1,54 @@
+.feach {
+    padding: 94px 0;
+}
+
+.card-list {
+    /* outline: 1px solid blue; */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+}
+
+.card-list > .card-item {
+    /* outline: 1px solid teal; */
+    
+    flex-basis: calc(100% / 4);
+    
+}
+.card-list > .card-item:not(:first-child) {
+    margin-left: 30px;
+    
+}
+
+.feachures-name {
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+}
+
+.feachures-dsr {
+    /* display: flex; */
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+
+}
+.card-item-wrap {
+    height: 120px;
+    width: 270px;
+    background-color: #F5F4FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
