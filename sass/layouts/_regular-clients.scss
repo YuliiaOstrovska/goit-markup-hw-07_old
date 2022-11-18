@@ -33,14 +33,12 @@
     justify-content: center;
     color: #AFB1B8;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    &:hover,
+    &:focus {
+        color: #2196F3;
+        border-color: #2196F3;
+    }
 }
 .reg-client-icon {
     fill: currentColor;
-}
-.reg-clients-link:hover,
-.reg-clients-link:focus {
-    color: #2196F3;
-    border-color: #2196F3;
-    
 }

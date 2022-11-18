@@ -7,7 +7,24 @@
 }
 
 .footer {
-    background: #2F303A;   
+    background: #2F303A;  
+    .logo-web {
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        color: #2196F3;
+    }
+    
+    .logo-studio{
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+    } 
 }
 
 .footer-logo {
@@ -18,23 +35,7 @@
 .footer-nav .footer-list + .footer-list {
     margin-top: 9px;
 }
-.footer .logo-web {
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: #2196F3;
-}
 
-.footer .logo-studio{
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-}
 .footer-address {
     font-family: 'Roboto';
     font-style: normal;
@@ -99,18 +100,16 @@
     color: #FFFFFF;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    &:hover,
+    &:focus {
+        background-color: #2196F3;
+        color: #FFFFFF;
+}
 }
 
 .footer-soc-icon {
     fill: currentColor;
 
-}
-
-.footer-soc-link:hover,
-.footer-soc-link:focus {
-    background-color: #2196F3;
-    color: #FFFFFF;
 }
 
 .footer-submit {
@@ -136,11 +135,12 @@
     font-size: 16px;
     color: rgba(255, 255, 255, 0.6);
     margin-right: 12px;
+    &::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 16px;
+    }
 }
-.online-mail::placeholder {
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 16px;
-}
+
 .online-btn {
     width: 200px;
     height: 50px;

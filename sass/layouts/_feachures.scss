@@ -3,23 +3,18 @@
 }
 
 .card-list {
-    /* outline: 1px solid blue; */
     margin: 0;
     padding: 0;
     list-style: none;
 
     display: flex;
-}
-
-.card-list > .card-item {
-    /* outline: 1px solid teal; */
-    
-    flex-basis: calc(100% / 4);
-    
-}
-.card-list > .card-item:not(:first-child) {
-    margin-left: 30px;
-    
+    > .card-item {
+        flex-basis: calc(100% / 4);
+    }
+    > .card-item:not(:first-child) {
+        margin-left: 30px;
+        
+    }
 }
 
 .feachures-name {
@@ -34,7 +29,6 @@
 }
 
 .feachures-dsr {
-    /* display: flex; */
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
